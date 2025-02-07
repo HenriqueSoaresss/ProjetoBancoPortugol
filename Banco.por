@@ -32,7 +32,7 @@ programa {
       escreva ("| 5. INVESTIR              |\n")
       escreva ("| 0. SAIR                  |\n")
       escreva ("|--------------------------|\n")
-      escreva ("OP«√O -> ")
+      escreva ("OP√á√ÉO -> ")
       leia (menu)
       limpa ()
 
@@ -56,14 +56,14 @@ programa {
         leia (senha)
         }
         limpa()
-        escreva("Digite o quanto ir· sacar: \n")
+        escreva("Digite o quanto ir√° sacar: \n")
         leia (saque) 
         enquanto (saque < 0){
         escreva ("Valor invalido. Tente novamente: ")
         leia (saque)
         }
         se (saque > saldo){
-        escreva ("N„o autorizado\n")
+        escreva ("N√£o autorizado\n")
         }
         senao{ 
         saldo = saldo - saque 
@@ -88,7 +88,7 @@ programa {
         leia (senha)
         }
         limpa()
-        escreva ("Digite quanto ir· depositar: \n")
+        escreva ("Digite quanto ir√° depositar: \n")
         leia (deposito)
         enquanto(deposito < 0){
         escreva ("Valor invalido. Tente novamente: ")
@@ -120,13 +120,13 @@ programa {
         pare
 
         caso 5:
-        escreva ("Quanto vocÍ ir· investir: ")
+        escreva ("Quanto voc√™ ir√° investir: ")
         leia (investir)
         se (investir > saldo ){
         escreva ("Saldo insufuciente.\n")
         }
         senao {
-        escreva ("Digite os meses que ir· investir: ")
+        escreva ("Digite os meses que ir√° investir: ")
         leia (meses)
         saldo = saldo - investir
         para (inteiro contador = 0; contador < meses; contador++){ 
